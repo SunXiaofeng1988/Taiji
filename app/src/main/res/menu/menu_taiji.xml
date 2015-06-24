@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".TaijiActivity">
+    <item android:id="@+id/closeBtn" android:title="@string/close_btn"
+        android:orderInCategory="0" android:showAsAction="never" />
+</menu>
