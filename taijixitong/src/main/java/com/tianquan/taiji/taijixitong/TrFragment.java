@@ -28,13 +28,7 @@ public class TrFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_tr, container, false);
         WebView trWebView = (WebView) view.findViewById(R.id.trWebView);
         trWebView.loadUrl(TaijiConstants.TR_URL);
-        trWebView.setWebViewClient(new WebViewClient() {
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                // 重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
-                view.loadUrl(url);
-                return true;
-            }
-        });
+        trWebView.setWebViewClient(new MyWebViewClient());
         trWebView.getSettings().setJavaScriptEnabled(true);
         return view;
     }

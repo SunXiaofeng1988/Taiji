@@ -7,41 +7,38 @@
         android:id="@+id/tabRadioGroup"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bottom1"
         android:orientation="horizontal"
         android:layout_alignParentTop="true"
-        >
+    >
 
         <RadioButton
             android:id="@+id/taijiRadioBtn"
             style="@style/MMTabButton"
             android:layout_weight="1.0"
             android:checked="true"
-            android:drawableTop="@drawable/item"
-            android:text="@string/taiji_text" />
+            android:text="@string/taiji_text"
+        />
 
         <RadioButton
             android:id="@+id/trRadioBtn"
             style="@style/MMTabButton"
             android:layout_weight="1.0"
-            android:drawableTop="@drawable/item"
-            android:text="@string/tr_text" />
+            android:text="@string/tr_text"
+            android:checked="false" />
 
         <RadioButton
             android:id="@+id/weiRadioBtn"
             style="@style/MMTabButton"
             android:layout_weight="1.0"
-
-            android:drawableTop="@drawable/item"
-            android:text="@string/wei_text" />
+            android:text="@string/wei_text"
+        />
 
         <RadioButton
             android:id="@+id/wechatRadioBtn"
             style="@style/MMTabButton"
             android:layout_weight="1.0"
-
-            android:drawableTop="@drawable/item"
-            android:text="@string/wechat_text" />
+            android:text="@string/wechat_text"
+        />
     </RadioGroup>
     <FrameLayout
         android:layout_width="match_parent"

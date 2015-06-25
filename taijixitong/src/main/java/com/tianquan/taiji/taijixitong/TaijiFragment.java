@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class TaijiFragment extends Fragment {
 
@@ -25,13 +28,7 @@ public class TaijiFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_taiji, container, false);
         taijiWebView = (WebView) view.findViewById(R.id.taijiWebView);
         taijiWebView.loadUrl(TaijiConstants.TAIJI_URL);
-        taijiWebView.setWebViewClient(new WebViewClient() {
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                // 重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
-                view.loadUrl(url);
-                return true;
-            }
-        });
+        taijiWebView.setWebViewClient(new MyWebViewClient());
         taijiWebView.getSettings().setJavaScriptEnabled(true);
         return view;
     }

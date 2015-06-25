@@ -75,7 +75,8 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
         switch (i) {
             case R.id.taijiRadioBtn:
                 if(mFragment != taijiFragment) {
-                    FragmentTransaction transaction = fragmentManager.beginTransaction().setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+                    FragmentTransaction transaction = fragmentManager.beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                     if(taijiFragment.isAdded()){
                         transaction.hide(mFragment).show(taijiFragment);
                     } else {
@@ -87,7 +88,8 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
                 break;
             case R.id.trRadioBtn:
                 if(mFragment != trFragment) {
-                    FragmentTransaction transaction = fragmentManager.beginTransaction().setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+                    FragmentTransaction transaction = fragmentManager.beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                     if(trFragment.isAdded()){
                         transaction.hide(mFragment).show(trFragment);
                     } else {
@@ -99,7 +101,8 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
                 break;
             case R.id.wechatRadioBtn:
                 if(mFragment != wechatFragment) {
-                    FragmentTransaction transaction = fragmentManager.beginTransaction().setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+                    FragmentTransaction transaction = fragmentManager.beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                     if(wechatFragment.isAdded()){
                         transaction.hide(mFragment).show(wechatFragment);
                     } else {
@@ -111,7 +114,8 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
                 break;
             case R.id.weiRadioBtn:
                 if(mFragment != weiFragment) {
-                    FragmentTransaction transaction = fragmentManager.beginTransaction().setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+                    FragmentTransaction transaction = fragmentManager.beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                     if(weiFragment.isAdded()){
                         transaction.hide(mFragment).show(weiFragment);
                     } else {
